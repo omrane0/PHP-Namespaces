@@ -1,0 +1,26 @@
+<?php
+include "Html.php";
+
+$table = new Html\Table();
+$table->title = "My table";
+$table->numRows = 5;
+
+$row = new Html\Row();
+$row->numCells = 3;
+?>
+
+<html>
+<body>
+
+<?php $table->message(); ?>
+<?php $row->message(); ?>
+
+</body>
+</html>
+
+
+
+
+Table 'My table' has 5 rows.
+
+The row has 3 cells.
